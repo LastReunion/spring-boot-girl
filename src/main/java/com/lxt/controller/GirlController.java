@@ -1,5 +1,8 @@
-package com.lxt;
+package com.lxt.controller;
 
+import com.lxt.dimain.Girl;
+import com.lxt.repository.GirlRepository;
+import com.lxt.service.GirlService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +17,9 @@ public class GirlController {
 
     @Autowired
     private GirlRepository girlRepository;
+
+    @Autowired
+    private GirlService girlService;
 
     /**
      * 查询所有女生列表
@@ -76,6 +82,11 @@ public class GirlController {
     public String girlAdd(Girl girl) {
         System.out.println(girl.toString());
         return "ok";
+    }
+
+    @PostMapping(value = "/girls/two")
+    public void girlTwo() {
+        girlService.insertTwo();
     }
 
 }

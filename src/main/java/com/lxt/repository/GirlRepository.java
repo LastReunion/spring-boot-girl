@@ -1,5 +1,6 @@
-package com.lxt;
+package com.lxt.repository;
 
+import com.lxt.dimain.Girl;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

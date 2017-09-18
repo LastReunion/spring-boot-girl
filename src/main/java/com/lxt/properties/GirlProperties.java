@@ -1,4 +1,4 @@
-package com.lxt;
+package com.lxt.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

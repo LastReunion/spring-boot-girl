@@ -1,4 +1,4 @@
-package com.lxt;
+package com.lxt.dimain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
